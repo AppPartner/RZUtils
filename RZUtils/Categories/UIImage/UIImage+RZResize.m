@@ -36,7 +36,7 @@
     CGSize size = [UIImage rz_sizeForImage:image scaledToSize:newSize preserveAspectRatio:preserveAspect];
 
     // Draw the image.
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 1);
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
